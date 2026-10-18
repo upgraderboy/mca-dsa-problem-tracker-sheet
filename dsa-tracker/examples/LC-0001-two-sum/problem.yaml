@@ -1,0 +1,63 @@
+problem_id: LC-0001
+title: Two Sum
+platforms:
+  - name: LeetCode
+    problem_id: "1"
+    url: https://leetcode.com/problems/two-sum/
+difficulty: Easy
+primary_topic: Arrays
+topic_tags: [Hash Map]
+patterns: [Complement Lookup]
+status: not started
+date_added: 2026-01-01
+first_attempted_date: null
+first_solved_date: null
+last_attempted_date: null
+languages_used: [python, cpp]
+solution_files:
+  - solutions/python/brute-force.py
+  - solutions/python/hash-map.py
+  - solutions/cpp/brute-force.cpp
+  - solutions/cpp/hash-map.cpp
+approaches:
+  - approach_id: A1
+    name: Brute Force
+    explanation: Check every pair.
+    algorithm: Nested loops
+    complexity:
+      time: {worst: O(n^2)}
+      auxiliary_space: O(1)
+      overall_space: O(1)
+    tradeoffs: [Simple but slow]
+    edge_cases: [No valid pair]
+    correctness: Exhaustive check finds all pairs.
+    use_cases: [Learning baseline]
+    source_code_by_language:
+      python: solutions/python/brute-force.py
+      cpp: solutions/cpp/brute-force.cpp
+    implemented: true
+    tested: false
+    independently_reproduced: false
+  - approach_id: A2
+    name: Hash Map
+    explanation: Track complement while scanning once.
+    algorithm: Hash table
+    complexity:
+      time: {average: O(n), worst: O(n)}
+      auxiliary_space: O(n)
+      overall_space: O(n)
+    tradeoffs: [Uses extra memory]
+    edge_cases: [Duplicate values]
+    correctness: Complement lookup guarantees pair detection.
+    use_cases: [General preferred approach]
+    source_code_by_language:
+      python: solutions/python/hash-map.py
+      cpp: solutions/cpp/hash-map.cpp
+    implemented: true
+    tested: false
+    independently_reproduced: false
+attempts: []
+revisions: []
+related_problem_ids: []
+notes: Example only
+key_insights: []
