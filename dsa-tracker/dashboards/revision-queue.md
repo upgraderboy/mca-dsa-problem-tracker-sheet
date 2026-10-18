@@ -1,3 +1,11 @@
 <!-- GENERATED FILE: DO NOT EDIT MANUALLY -->
 
-Run `python -m scripts.dsa_tracker generate-dashboards` to regenerate this dashboard.
+# Revision Queue
+
+Generated as of: 2026-10-18
+
+## Due Today or Earlier
+- None
+
+## Overdue
+- None

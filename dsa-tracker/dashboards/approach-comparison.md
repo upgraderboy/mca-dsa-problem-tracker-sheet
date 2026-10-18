@@ -1,3 +1,18 @@
 <!-- GENERATED FILE: DO NOT EDIT MANUALLY -->
 
-Run `python -m scripts.dsa_tracker generate-dashboards` to regenerate this dashboard.
+# Approach Comparison
+
+| Problem ID | Approaches | Implementations |
+|---|---:|---:|
+
+## Problems with only one documented approach
+
+- None
+
+## Attempted problems not yet independently solved
+
+- None
+
+## Recent solving and revision activity
+
+- None
