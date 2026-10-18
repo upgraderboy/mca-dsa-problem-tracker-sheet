@@ -1,0 +1,41 @@
+problem_id: LC-0000
+title: Example Problem Title
+platforms:
+  - name: LeetCode
+    problem_id: "0"
+    url: https://leetcode.com/problems/example/
+difficulty: Easy
+primary_topic: Arrays
+topic_tags: []
+patterns: []
+status: not started
+date_added: 2026-01-01
+first_attempted_date: null
+first_solved_date: null
+last_attempted_date: null
+languages_used: []
+solution_files: []
+approaches:
+  - approach_id: A1
+    name: Brute Force
+    explanation: Explain core idea in README or approach markdown.
+    algorithm: Brute force
+    complexity:
+      time:
+        average: O(n^2)
+        worst: O(n^2)
+      auxiliary_space: O(1)
+      overall_space: O(1)
+    tradeoffs: []
+    edge_cases: []
+    correctness: "Why this works"
+    use_cases: []
+    source_code_by_language: {}
+    implemented: false
+    tested: false
+    independently_reproduced: false
+attempts: []
+revisions: []
+related_problem_ids: []
+notes: null
+key_insights: []

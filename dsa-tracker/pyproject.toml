@@ -1,0 +1,21 @@
+[project]
+name = "dsa-tracker"
+version = "0.1.0"
+description = "GitHub-native DSA knowledge base and tracker"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["scripts*"]

@@ -1,0 +1,58 @@
+# Canonical problem metadata schema (human-readable)
+# Dates use ISO 8601: YYYY-MM-DD
+# Date-times use ISO 8601 UTC offset, e.g. 2026-10-18T13:30:00Z
+
+required:
+  - problem_id
+  - title
+  - platforms
+  - difficulty
+  - status
+  - date_added
+  - primary_topic
+  - approaches
+
+enums:
+  difficulty: [Easy, Medium, Hard]
+  status:
+    - not started
+    - attempted
+    - solved with help
+    - independently solved
+    - mastered
+  assistance_categories:
+    - Independent
+    - Hint
+    - Tutor
+    - AI
+    - Editorial
+    - Existing solution
+    - Other
+  revision_outcomes:
+    - Easy recall
+    - Correct with minor hints
+    - Needed substantial help
+    - Could not solve
+    - Could solve but could not explain
+
+fields:
+  problem_id: "Unique stable internal ID, e.g. LC-0001"
+  title: "Canonical problem title"
+  platforms: "List of objects: {name, problem_id, url}"
+  difficulty: "One of Easy/Medium/Hard"
+  primary_topic: "Main topic category"
+  topic_tags: "Optional list of topic tags"
+  patterns: "Optional list of patterns"
+  status: "Progress status"
+  date_added: "Date when record was created"
+  first_attempted_date: "YYYY-MM-DD or null"
+  first_solved_date: "YYYY-MM-DD or null"
+  last_attempted_date: "YYYY-MM-DD or null"
+  languages_used: "List of language names used"
+  solution_files: "List of relative solution file paths"
+  approaches: "List of approach objects"
+  attempts: "Append-only list of attempt events"
+  revisions: "List of revision events"
+  related_problem_ids: "Optional list of internal IDs"
+  notes: "Optional personal notes"
+  key_insights: "Optional list of concise insights"
